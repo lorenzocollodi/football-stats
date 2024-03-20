@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "football-stats"
+version = "0.1.0"
+description = "Make and visualise statistics about football (or soccer if you are US based)"
+packages = [{ include = "football_stats", from = "src" },]
+authors = ["lorenzocollodi <lorenzocollodi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.8.3"
+understat = "^0.1.12"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.9.0"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
